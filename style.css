@@ -28,17 +28,11 @@ h3 {
 }
 
 a {
-  color : #DDDEDF;/*#252A34;*/
+  color: #DDDEDF;
   font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
 }
-
-a:hover {
-  background-color: #141416;
-  text-decoration: none;
-}
-
 
 .img-circle {
   border-radius: 50%;
@@ -46,33 +40,35 @@ a:hover {
   padding: 5px;
 }
 
-.sidebar {
+.sidebar-grey {
   position: fixed;
-  width: 220px;
-  left: 0;
   top: 0;
   bottom: 0;
-  border-right: 2px;
-  background-color: #23262F; /*#141416; /*rgb(50, 50, 60);*/
+  background-color: #23262F;
 }
 
-.sidebar ul {
+.sidebar-left {
+  left: 0;
+  width: 220px;
+}
+
+.sidebar-left ul {
   list-style: none;
-  padding: 20px;
-  width: 200px;
+  padding: 0;
+  margin: 0;
 }
 
-.sidebar li {
-  margin-bottom: 30px;
+.sidebar-left li {
+  padding: 10px 20px;
+}
+
+.sidebar-left li:hover {
+  background-color: rgb(45, 48, 57);
 }
 
 .sidebar-right {
-  position: fixed;
-  right:0;
-  top: 0;
-  bottom: 0;
+  right: 0;
   width: 220px;
-  background-color: #23262F;/*#141416;*/
   color: #DDDEDF;
 }
 
@@ -112,7 +108,7 @@ a:hover {
 
 .card-grey {
   background: #23262F;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 0 10px 30px rgba(0,0,0,.1);
 }
@@ -143,15 +139,54 @@ a:hover {
 
 .list-inline i:hover {
   color: #141416;
-  background-color: none;
 }
 
-
-.btn-blue {
-  background-color: #3772FF;/*#6B72E1;*/
-  color : white;
+.btn-round {
   padding: 5px 10px;
   border-radius: 15px;
+}
+
+.btn-blue {
+  background-color: #3772FF;
+  color : white;
+}
+
+.btn-hover-black:hover {
+  background-color: #141416;
+}
+
+.tag {
+  border: 1px solid white;
+  font-size: 13px;
+}
+
+.tags-inline {
+  display: inline-flex;
+}
+
+.tag-pink {
+  border-color: #EF466F;
+  color: #EF466F;
+}
+
+.tag-purple {
+  border-color : #9756D9;
+  color : #9756D9;
+}
+
+.tag-green {
+  border-color : #45b16b;
+  color : #45b16b;
+}
+
+.tag-blue {
+  border-color : #3772FF;
+  color : #3772FF;
+}
+
+.tag-orange {
+  border-color : #E69846;
+  color : #E69846;
 }
 
 #introduction {
@@ -171,7 +206,7 @@ a:hover {
 }
 
 #sidebar-avatar {
-  margin-top: 30px;
+  margin: 30px auto;
 }
 
 #sidebar-github {
@@ -182,4 +217,9 @@ a:hover {
   padding-top : 90px;
   border-top: 1px solid white;
   border-color: #787C8F;
+}
+
+#footer {
+  margin-top: 60px;
+  font-size: 12px;
 }
