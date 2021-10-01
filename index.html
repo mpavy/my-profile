@@ -7,54 +7,75 @@
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css" media="all" />
   <script src="https://kit.fontawesome.com/d2f831436c.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="sidebar">
+      <div class="text-center" id="sidebar-avatar">
+        <img src="images/profile-picture.jpg" alt="Photo de profil" class="img-circle">
+      </div>
+      <ul>
+        <li><a href="#introduction">ABOUT ME</a></li>
+        <li><a href="#coding">#very-interested-in-coding-and-still-learning 💻</a></li>
+        <li><a href="#dance">#dance-addict 💃</a></li>
+        <li><a href="#aquarium">#aquariums-lover 🐟</a></li>
+      </ul>
+    </div>
     <div class="container">
-      <div class ="card-white text-center" id="introduction">
-        <h1>Hello, I'm Myriam. Nice to meet you !😊😎<i class="far fa-grin-alt"></i></h1>
-        <img src="profile-picture.jpg" alt="Photo de profil" class="img-circle">
+      <div class ="text-center" id="introduction">
+        <div id="title">
+          <h1>HELLO, I'M MYRIAM <br> NICE TO MEET YOU ! <i class="far fa-grin-alt"></i></h1>
+          <!--<div id="emojis">😊😎<i class="far fa-grin-alt"></i></div>-->
+        </div>
         <p>
-          I'm owning a master in Software engineering and soon one in Business & Management.<br>
-        </p>
-        <p>
-          Please visit my <a href="https://github.com/mpavy/Mpavy_KChertier_Unbyte" target="_blank" class="btn-blue">Github account</a> to see some (old) school projects if you wish !
-        </p>
-        <p>
-          A few things about me :
+          I'm owning a master in Software engineering and soon one in Business & Management.
         </p>
       </div>
-      <div class ="card-white text-center">
-        <h2>Very interested in coding and still learning 💻</h2>
+      <div class="page-content">
+        <h2>A few things about me</h2>
+        <div id="coding" class ="card-grey card-content">
+          <h3>#very-interested-in-coding-and-still-learning 💻</h3>
+          <p>
+            I mainly worked with C#/.NET framework so far. I'm currently trying to learn React.js.<br>
+            I barely used Html/CSS before so this is an opportunity to learn !
+          </p>
+        </div>
+        <div id="dance" class ="card-grey card-content">
+          <h3>#dance-addict 💃</h3>
+          <p> All types of dancing !</p>
+        </div>
+        <div id="aquarium" class ="card-grey card-content">
+          <h3>#aquariums-lover 🐟</h3>
+          <p>
+            Strong interest in aquascaping, only in sweet water for now. <br>
+            My favourite fishes : ramirezis and apistogrammas !
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class ="sidebar-right text-center">
+      <div id="sidebar-github">
         <p>
-          I mainly worked with C#/.NET framework so far. I'm currently trying to learn React.js.<br>
-          I barely used Html/CSS before so this is an opportunity to learn !
+        Please visit my :
+        <p>
+          <a href="https://github.com/mpavy/Mpavy_KChertier_Unbyte" target="_blank" class="btn-blue">Github account</a>
+        </p>
+        to see some (old) school projects if you wish !
         </p>
       </div>
-      <div class ="card-white text-center">
-        <h2>Dance addict 💃</h2>
-        <p> All types of dancing !</p>
-      </div>
-      <div class ="card-white text-center">
-        <h2>Aquariums lover 🐟</h2>
-        <p>
-          Strong interest in aquascaping, only in sweet water for now. <br>
-          My favourite fishes : ramirezis and apistogrammas !
-        </p>
-      </div>
-      <div class ="card-white text-center">
-        <h2>You can follow me here if you'd like : </h2>
+       <div id="sidebar-socials">
+        <p>You can follow me here if you'd like : </p>
         <ul class="list-inline">
           <li>
             <a href="https://www.facebook.com/profile.php?id=100008656241315" target="_blank">
-              <i class="fab fa-facebook-f"></i> Facebook
+              <i class="fab fa-facebook-f"></i>
             </a>
           </li>
           <li>
             <a href="https://www.linkedin.com/in/myriam-pavy/" target="_blank">
-              <i class="fab fa-linkedin-in"></i> Linkedin
+              <i class="fab fa-linkedin-in"></i>
             </a>
           </li>
         </ul>
