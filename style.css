@@ -94,18 +94,6 @@ a {
     margin: 10px;
 }
 
-@media (max-width: 800px) {
-  .container {
-    width: 600px;
-  }
-}
-
-@media (max-width: 650px) {
-  .container {
-    width: 450px;
-  }
-}
-
 .card-grey {
   background: #23262F;
   padding: 10px 20px;
@@ -222,4 +210,27 @@ a {
 #footer {
   margin-top: 60px;
   font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+  .container, .card-content, #title, #introduction {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .container, .card-content, #title, #introduction {
+    width: 400px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container, .card-content, #title, #introduction {
+    width: 300px;
+  }
+
+@media (max-width: 800px) {
+ .container, .card-content, #title, #introduction {
+    width: 200px;
+  }
 }
